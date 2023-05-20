@@ -1,0 +1,10 @@
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('29b18d03-7b6f-4098-8da8-608ea3a50699', 'Adriana Machado Silva', '84850270000', 34);
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('5452379d-faf1-4827-8611-a2b0fb98d9d8', 'Paulo Sergio Bonetti', '21430130008', 84);
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('268afae1-7084-4579-921e-f10dd0f06262', 'Luana Bugate Sminorbi', '34963461080', 20);
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('cc2f1a42-a156-4ae0-97bb-1c6950f0f370', 'José Luiz Teixeira', '25817040042', 10);
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('2c19472b-ad91-4bb0-a5d9-d5bff4525d92', 'Marcos Paulos Moreira Túlio', '25817040042', 16);
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('404cb259-411f-4b6a-bfc1-f789c5400ac7', 'Caio Martins Pinto Santos', '92092502069', 56);
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('fa58c135-dcdd-4752-8b49-d379a2bcd94a', 'Luiz Alves', '28027792061', 2);
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('caf7c05b-f37c-458a-b387-84d6b8cba69c', 'Natalia Santos Nogueira', '45208910004', 18);
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('488320b8-8528-4c5b-8bdc-31ccdf253a90', 'Joana Sibério Topaz', '22797744020', 15);
+insert into beneficiario (id_beneficiario, nome, cpf, idade) values ('9406e8c0-709f-4b4c-ae8c-7dda94027b8a', 'Wilson de Lima', '08199006056', 31);
