@@ -34,9 +34,6 @@ public class PlanoController {
 
 	@PostMapping(path = "/salvar")
 	public ResponseEntity<Object> salvarPlano(@RequestBody PlanoDTO dto) {
-		if(dto == null) 
-			ResponseErrosUtil.respostaErro010();
-		
 		try {
 			Plano plano = service.converterDeDTO(dto);
 			plano = service.criarPlano(plano);
@@ -62,10 +59,7 @@ public class PlanoController {
 	}
 
 	@PutMapping(path = "/{cpf}/atualizar")
-	public ResponseEntity<? extends Object> atualizarPlano(@PathVariable UUID idPlano, @RequestBody PlanoDTO dto) {
-		if(dto == null) 
-			ResponseErrosUtil.respostaErro010();
-			
+	public ResponseEntity<? extends Object> atualizarPlano(@PathVariable UUID idPlano, @RequestBody PlanoDTO dto) {			
 		if (service.verificarListaDePlanos().size() == 0)
 			return ResponseErrosUtil.respostaErro004();
 		

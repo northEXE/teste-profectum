@@ -71,8 +71,6 @@ public class BeneficiarioService {
 			throw new RegraNegocioException(ErrosEnum.ERRO_004.getMensagemErro());
 
 		Optional<Plano> plano = planoService.buscarPlanoPorId(idPlano);
-		if (!plano.isPresent())
-			throw new RegraNegocioException(ErrosEnum.ERRO_011.getMensagemErro());
 		
 		Optional<Beneficiario> beneficiario = buscarBeneficiarioPorCPF(cpf);
 		if(beneficiario.get().getPlano() != null)

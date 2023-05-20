@@ -34,9 +34,6 @@ public class BeneficiarioController {
 
 	@PostMapping(path = "/salvar")
 	public ResponseEntity<Object> salvarBeneficiario(@RequestBody BeneficiarioDTO dto) {
-		if(dto == null) 
-			ResponseErrosUtil.respostaErro010();
-		
 		try {
 			Beneficiario beneficiario = service.converterDeDTO(dto);
 			beneficiario = service.criarBeneficiario(beneficiario);
@@ -62,10 +59,7 @@ public class BeneficiarioController {
 	}
 
 	@PutMapping(path = "/{cpf}/atualizar")
-	public ResponseEntity<? extends Object> atualizarBeneficiario(@PathVariable String cpf, @RequestBody BeneficiarioDTO dto) {
-		if(dto == null) 
-			ResponseErrosUtil.respostaErro010();
-			
+	public ResponseEntity<? extends Object> atualizarBeneficiario(@PathVariable String cpf, @RequestBody BeneficiarioDTO dto) {	
 		if (service.verificarListaDeBeneficiarios().size() == 0)
 			return ResponseErrosUtil.respostaErro004();
 		

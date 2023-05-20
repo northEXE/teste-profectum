@@ -43,7 +43,7 @@ public class PlanoService {
 	public Optional<Plano> buscarPlanoPorId(UUID idPlano) {
 		Optional<Plano> plano = repository.findById(idPlano);
 		if (!plano.isPresent())
-			throw new RegraNegocioException(ErrosEnum.ERRO_002.getMensagemErro());
+			throw new RegraNegocioException(ErrosEnum.ERRO_011.getMensagemErro());
 
 		return plano;
 	}

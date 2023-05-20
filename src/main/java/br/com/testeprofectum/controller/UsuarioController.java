@@ -33,9 +33,6 @@ public class UsuarioController {
 
 	@PostMapping(path = "/salvar")
 	public ResponseEntity<Object> salvarUsuario(@RequestBody UsuarioDTO dto) {
-		if(dto == null) 
-			ResponseErrosUtil.respostaErro010();
-		
 		try {
 			Usuario usuario = service.converterDeDTO(dto);
 			usuario = service.criarUsuario(usuario);
@@ -62,9 +59,6 @@ public class UsuarioController {
 
 	@PutMapping(path = "/{login}/atualizar")
 	public ResponseEntity<? extends Object> atualizarUsuario(@PathVariable String login, @RequestBody UsuarioDTO dto) {
-		if(dto == null) 
-			ResponseErrosUtil.respostaErro010();
-		
 		if (service.verificarListaDeUsuarios().size() == 0)
 			return ResponseErrosUtil.respostaErro004();
 		
